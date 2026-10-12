@@ -1,13 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "security:only-security-updates"
-  ],
-  "labels": [
-    "dependencies"
-  ],
+  "extends": ["security:only-security-updates"],
+  "labels": ["dependencies"],
   "semanticCommits": "enabled",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": ["* 0-11 * * 1"]
   }
 }
