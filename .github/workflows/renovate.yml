@@ -20,6 +20,8 @@ jobs:
     permissions:
       contents: write # for renovate to push its update branches
       pull-requests: write # for renovate to open and update pull requests
+      statuses: write # for renovate to set branch status checks
+      vulnerability-alerts: read # for renovate to read dependabot alerts
 
     steps:
       - name: renovate
